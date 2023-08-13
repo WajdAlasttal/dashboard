@@ -1,5 +1,5 @@
 <template>
-    <div class="login">
+    <div class="login d-flex align-items-center">
       <div class="side-bar">
         <div class="side-image">
           <img src="../assets/images/Photo.png" alt="onboarding" />
@@ -14,28 +14,9 @@
         </div>
       </div>
       <div class="login-form">
-        <h1 class="login-header">تسجيل الدخول أولا إلى حسابك</h1>
-        <form action="">
-          <FormInputs
-            label="البريد الالكتروني"
-            type="email"
-            placeholder="ادخل البريد الالكتروني"
-          />
-          <FormInputs
-            label="كلمة المرور"
-            type="password"
-            placeholder="ادخل كلمة المرور"
-          />
-          <div class="check-forget">
-            <div class="check-box">
-              <FormInputs label="تذكرني" type="checkbox" />
-            </div>
-            <div class="password">
-              <p><a href="#">هل نسيت كلمة السر</a></p>
-            </div>
-          </div>
-          <FormButtons text="تسجيل الدخول" :disabled="true" />
-        </form>
+        <h1 class="login-header text-center">تسجيل الدخول أولا إلى حسابك</h1>
+        <!-- form -->
+        <SignInForm />
         <div class="container">
           <div class="line"></div>
           <div class="word">أو تسجيل الدخول باستخدام</div>
@@ -55,13 +36,11 @@
   </template>
   
   <script>
-  import FormInputs from "../components/FormInputs.vue";
-  import FormButtons from "../components/FormButtons.vue";
+  import SignInForm from '../components/SignInForm.vue';
   import ButtonVue from '../components/ButtonVue.vue';
   export default {
     components: {
-      FormInputs,
-      FormButtons,
+      SignInForm,
       ButtonVue,
     },
   };
@@ -74,8 +53,6 @@
   }
   .login {
     direction: rtl;
-    display: flex;
-    align-items: center;
   }
   .side-bar {
     background-color: #111827;
@@ -89,16 +66,14 @@
   .side-bar .content {
     padding: 2.5rem 2rem;
   }
-  h1 {
-    text-align: center;
-  }
   .content .logo {
     display: flex;
   }
   .content .logo i {
     font-size: 25px;
     color: #27a376;
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
   }
   .content h5 {
     font-size: 38px;
