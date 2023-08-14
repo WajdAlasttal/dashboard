@@ -1,5 +1,6 @@
 <template>
-  <form v-on:submit.prevent="submit">
+<div class="form-container">
+  <form class="form" v-on:submit.prevent="submit">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">البريد الالكتروني</label>
       <span>*</span>
@@ -7,6 +8,7 @@
         type="email"
         class="form-control"
         v-model.trim="state.email"
+        :class="{ 'invalid-input': v$.email.$error }"
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="ادخل البريد الالكتروني"
@@ -16,7 +18,7 @@
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
       <span>*</span>
-      <input type="password" class="form-control" v-model.trim="state.password" id="exampleInputPassword1" placeholder="ادخل كلمة المرور" />
+      <input type="password" class="form-control" v-model.trim="state.password" :class="{ 'invalid-input': v$.password.$error }" id="exampleInputPassword1" placeholder="ادخل كلمة المرور" />
       <span v-if="v$.password.$error">{{ v$.password.$errors[0].$message }}</span>
     </div>
     <div class="check-forget">
@@ -28,8 +30,9 @@
               <p><a href="#">هل نسيت كلمة المرور</a></p>
             </div>
     </div>
-    <button type="submit" class="btn" @click="submitForm">تسجيل دخول</button>
+    <button type="submit" class="btn" @click="submitForm" :disabled="hasValidationErrors">تسجيل دخول</button>
   </form>
+</div>
 </template>
   
 <script>
@@ -56,15 +59,22 @@ export default {
             v$,
         }
     },
+    computed: {
+      hasValidationErrors() {
+      this.v$.$validate();
+      return this.v$.$error;
+    },
+    },
     methods:{
       submitForm: function(){
         this.v$.$validate();
         if(!this.v$.$error){
-            alert("hellooo");
+            alert("welcome");
         }else{
             alert("form failed validation")
         }
-      }  
+      },
+
     }
     };
 </script>
@@ -129,5 +139,8 @@ export default {
   }
   .btn:disabled{
       opacity: 0.5;
+  }
+  .invalid-input {
+    border-color: red;
   }
 </style>
