@@ -40,10 +40,16 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: row-reverse;
-    
   }
   .icon {
     margin-left: 1rem;
   }
-  
+  @media (max-width: 768px) { 
+    button{
+    font-size: 14px;
+  }
+    .icon {
+    margin-left: 0rem;
+  } 
+  }
   </style>

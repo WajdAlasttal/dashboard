@@ -1,6 +1,6 @@
 <template>
   <div class="login d-flex">
-    <div class="col-md-5 d-none d-md-block">
+    <div class="col-md-12 col-lg-5 d-none d-md-block">
     <div class="side-bar">
       <div class="side-image">
         <img
@@ -17,7 +17,7 @@
       </div>
     </div>
     </div>
-    <div class="col-md-6 ">
+    <div class="col-md-12 col-lg-6 ">
       <div class="login-form">
         <h1 class="login-header text-center mt-sm-0">
         تسجيل الدخول أولا إلى حسابك
@@ -53,7 +53,7 @@ export default {
 };
 </script>
   
-  <style  scoped>
+<style  scoped>
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
 * {
   font-family: "Tajawal", sans-serif;
@@ -90,7 +90,7 @@ export default {
   margin-bottom: 2rem;
 }
 .login-form {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-right: 10rem;
 }
 .login-header {
@@ -128,7 +128,7 @@ export default {
   font-size: 14px;
 }
 .footer {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   justify-content: center;
 }
@@ -136,11 +136,76 @@ export default {
   margin-left: 1rem;
   font-size: 14px;
 }
-@media (max-width: 888px){
+@media (max-width: 768px) { 
+*{
+  justify-content: center;
+}
   .login-form {
   justify-content: center;
   margin-right:0;
-  margin: 1rem;
+  margin: 4rem;
+}
+.line {
+  margin-top: 2rem;
+}
+.word {
+  font-size: 12px;
+  margin: 0;
+}
+.footer {
+  margin-top: 4rem;
+}
+.footer p {
+  margin-left: 0.1rem;
+  font-size: 12px;
+}
+}
+@media(min-width: 768px)and (max-width: 1024px) { 
+.login{
+  flex-direction: column-reverse;
+}
+.login-form {
+  margin-right:0;
+  margin: 4rem;
+}
+.line {
+  margin-top: 2rem;
+}
+.word {
+  font-size: 12px;
+  margin: 0;
+}
+.footer {
+  margin-top: 3rem;
+}
+}
+@media (min-width:1024px) and (max-width: 1115px){
+  .side-bar .content {
+  padding: 3rem 0;
+}
+.content h5 {
+  font-size: 28px;
+}
+.content p {
+  font-size: 16px;
+}
+.login-form {
+  margin-top: 1rem;
+}
+.login-header {
+  font-size: 31px;
+}
+.word {
+  font-size: 14px;
+}
+.footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.footer p {
+  margin-left: 1rem;
+  font-size: 14px;
 }
 }
 </style>
