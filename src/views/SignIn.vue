@@ -58,6 +58,10 @@ export default {
 * {
   font-family: "Tajawal", sans-serif;
 }
+html,
+body {
+  height: 100%
+}
 .login {
   direction: rtl;
 }
@@ -82,12 +86,12 @@ export default {
 .content h5 {
   font-size: 38px;
   font-weight: 700;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .content p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2.3rem;
 }
 .login-form {
   margin-top: 4rem;
