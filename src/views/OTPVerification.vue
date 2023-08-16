@@ -1,16 +1,16 @@
 <template>
     <div class="wrapper">
-      <div class="new-password">
+      <div class="otp-verify">
         <div class="logo d-flex justify-content-center align-items-center">
           <i class="fa-solid fa-asterisk ms-1"></i>
           <h4>هيومانلاين</h4>
         </div>
         <div class="header">
-          <h5>اعادة تعيين كلمة المرور</h5>
-          <p>قم بتعيين كلمة المرور الجديدة بحد أدنى 8 أحرف مع مجموعة من الأحرف والأرقام</p>
+          <h5>التحقق من OTP</h5>
+          <p>لقد أرسلنا رمز التحقق إلى عنوان البريد الإلكتروني </p>
         </div>
         <div class="form-floating">
-          <NewPassForm />
+          <OTPForm/>
         </div>
         <div class="footer d-flex justify-content-between">
             <p style="color: #a0aec0">© 2023 هيومانلاين. الحقوق محفوظة.</p>
@@ -22,10 +22,10 @@
   </template>
   
   <script>
-  import NewPassForm from '../components/NewPassForm.vue';
+  import OTPForm from '../components/OTPForm.vue';
   export default {
     components: {
-        NewPassForm,
+        OTPForm,
     },
   };
   </script>
@@ -37,13 +37,13 @@
     height: 100vh;
     position: relative;
   }
-  .new-password {
+  .otp-verify {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 30%;
     direction: rtl;
     width: 100%;
-    max-width: 35%;
+    max-width: 40%;
     padding: 15px;
   }
   .logo i{
@@ -60,8 +60,8 @@
   }
   .footer {
     position: absolute;
-    bottom: -33%;
-    left: 5%;
+    bottom: -77%;
+    left: 12%;
     display: flex;
     justify-content: center;
   }
@@ -70,7 +70,7 @@
     font-size: 14px;
   }
   @media (max-width: 768px) {
-  .new-password {
+  .otp-verify {
     top: 5%;
     left: 10%;
     max-width: 80%;
@@ -89,7 +89,7 @@
   } 
   }
   @media(min-width: 768px)and (max-width: 1024px) { 
-  .new-password {
+  .otp-verify {
     top: 25%;
     left: 15%;
     max-width: 70%;
@@ -108,7 +108,7 @@
   } 
   }
   @media (min-width:1024px) and (max-width: 1115px){
-  .new-password {
+  .otp-verify {
     top: 10%;
     left: 10%;
     max-width: 80%;

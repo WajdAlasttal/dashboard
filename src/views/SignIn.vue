@@ -132,7 +132,9 @@ body {
   font-size: 14px;
 }
 .footer {
-  margin-top: 4rem;
+  position: absolute;
+  bottom: -3%;
+  left: 12%;
   display: flex;
   justify-content: center;
 }

@@ -41,7 +41,7 @@
         @click="submitForm"
         :disabled="v$.$error"
       >
-        تحديث كلمة المرور
+        <router-link to="/otpverification">تحديث كلمة المرور </router-link>
       </button>
     </form>
   </div>
@@ -49,7 +49,7 @@
   
   <script>
 import useValidate from "@vuelidate/core";
-import { required, sameAs ,helpers} from "@vuelidate/validators";
+import { required, sameAs, helpers } from "@vuelidate/validators";
 import { reactive, computed } from "vue";
 export default {
   setup() {
@@ -71,12 +71,18 @@ export default {
       return {
         password: {
           password: {
-            required: helpers.withMessage("يجب ادخال قيمة",required),
-            passwordComplexity:helpers.withMessage("يجب أن تحتوي على حرف كبير وصغير ورقم، ويجب أن تكون طولها 8 أحرف على الأقل",passwordComplexity)
+            required: helpers.withMessage("يجب ادخال قيمة", required),
+            passwordComplexity: helpers.withMessage(
+              "يجب أن تحتوي على حرف كبير وصغير ورقم، ويجب أن تكون طولها 8 أحرف على الأقل",
+              passwordComplexity
+            ),
           },
           confirm_passowrd: {
-            required: helpers.withMessage("يجب ادخال قيمة",required),
-            sameAs: helpers.withMessage("يجب أن تكون القيمة مساوية للقيمة الأخرى",sameAs(state.password.password)),
+            required: helpers.withMessage("يجب ادخال قيمة", required),
+            sameAs: helpers.withMessage(
+              "يجب أن تكون القيمة مساوية للقيمة الأخرى",
+              sameAs(state.password.password)
+            ),
           },
         },
       };
@@ -92,7 +98,7 @@ export default {
     submitForm: function () {
       this.v$.$validate();
       if (!this.v$.$error) {
-        alert("welcome");
+        this.$router.push('/otpverification');
       }
     },
   },

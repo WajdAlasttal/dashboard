@@ -59,7 +59,9 @@ export default {
     font-size: 18px;
 }
 .footer {
-  margin-top: 10rem;
+  position: absolute;
+  bottom: -50%;
+  left: 5%;
   display: flex;
   justify-content: center;
 }
