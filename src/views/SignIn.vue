@@ -91,10 +91,10 @@ body {
 .content p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2rem;
 }
 .login-form {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-right: 10rem;
 }
 .login-header {
@@ -132,7 +132,7 @@ body {
   font-size: 14px;
 }
 .footer {
-  margin-top: 7rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
 }

@@ -1,5 +1,4 @@
 <template>
-
   <router-view/>
 </template>
 
@@ -8,9 +7,6 @@
 
 export default {
   name: 'App',
-  components: {
-
-  }
 }
 </script>
 
@@ -19,6 +15,9 @@ export default {
 *{
   margin: 0;
   padding: 0;
+}
+body{
+  height: 100%;
 }
 
 </style>

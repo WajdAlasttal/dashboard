@@ -1,20 +1,26 @@
-import { createRouter , createWebHistory } from "vue-router";
-import SignIn from '../views/SignIn.vue';
-import ResetPassword from '../views/ResetPassword.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import SignIn from "../views/SignIn.vue";
+import ResetPassword from "../views/ResetPassword.vue";
+import NewPassword from "../views/NewPassword.vue";
 const routes = [
-    {
-    path: '/',
+  {
+    path: "/",
     name: SignIn,
     component: SignIn,
-    },
-    {
-    path:'/resetpassword',
+  },
+  {
+    path: "/resetpassword",
     name: ResetPassword,
-    component: ResetPassword
-    }
-]
-const router=createRouter({
-    routes,
-    history: createWebHistory(),
-})
+    component: ResetPassword,
+  },
+  {
+    path: "/newpassword",
+    name: NewPassword,
+    component: NewPassword,
+  },
+];
+const router = createRouter({
+  routes,
+  history: createWebHistory(),
+});
 export default router;

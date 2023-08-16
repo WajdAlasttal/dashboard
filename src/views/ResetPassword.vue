@@ -39,11 +39,11 @@ export default {
 }
 .reset-password {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 30%;
   direction: rtl;
   width: 100%;
-  max-width: 40%;
+  max-width: 35%;
   padding: 15px;
 }
 .logo i{
@@ -59,7 +59,7 @@ export default {
     font-size: 18px;
 }
 .footer {
-  margin-top: 7rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
 }
@@ -80,7 +80,7 @@ export default {
     font-size: 15px;
 }
 .footer {
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 .footer p {
   font-size: 12px;
