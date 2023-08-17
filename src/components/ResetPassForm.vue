@@ -21,8 +21,7 @@
         type="submit"
         class="btn"
         @click="submitForm"
-        :disabled="v$.email.$error"
-      >
+        :disabled="v$.email.$error">
         <router-link to="/newpassword">تحديث كلمة المرور</router-link>
       </button>
       <button type="submit" class="btn">

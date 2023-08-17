@@ -4,6 +4,7 @@ import ResetPassword from "../views/ResetPassword.vue";
 import NewPassword from "../views/NewPassword.vue";
 import OTPVerification from "../views/OTPVerification.vue";
 import SuccessState from '../views/SuccessState.vue'
+import StepsPage from '../views/StepsPage.vue';
 const routes = [
   {
     path: "/",
@@ -29,6 +30,11 @@ const routes = [
     path:'/success',
     name:SuccessState,
     component:SuccessState,
+  },
+  {
+    path:'/steps',
+    name:StepsPage,
+    component:StepsPage,
   }
 ];
 const router = createRouter({
