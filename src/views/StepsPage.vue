@@ -97,16 +97,16 @@
           <div class="step-card col-6">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <StepsCard />
+                <Step1Card />
               </div>
               <div class="item">
-                <StepsCard />
+                <Step2Card />
               </div>
               <div class="item">
-                <StepsCard />
+                <Step3Card />
               </div>
               <div class="item">
-                <StepsCard />
+                <Step4Card />
               </div>
             </div>
           </div>
@@ -116,13 +116,19 @@
   </div>
 </template>
 <script>
-import StepsCard from "../components/StepsCard.vue";
+import Step1Card from "../components/Steps/Step1Card.vue";
+import Step2Card from "../components/Steps/Step2Card.vue";
+import Step3Card from "../components/Steps/Step3Card.vue";
+import Step4Card from "../components/Steps/Step4Card.vue";
 import StepHeader from "../components/StepHeader.vue";
 import ButtonSlider from "../components/ButtonSlider.vue";
 export default {
   components: {
     StepHeader,
-    StepsCard,
+    Step1Card,
+    Step2Card,
+    Step3Card,
+    Step4Card,
     ButtonSlider,
   },
   mounted() {
@@ -158,7 +164,7 @@ export default {
   color: #27a376;
 }
 .step-card {
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding: 1rem;
   background-color: #f1f2f4;
   border-radius: 10px;

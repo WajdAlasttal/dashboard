@@ -5,7 +5,9 @@
       <label class="form-label" for="companyName">اسم الشركة</label><span>*</span>
       <input class="form-control" type="text" placeholder="ادخل اسم الشركة" />
       <label class="form-label" for="domainName">مجال الشركة</label>
-      <input class="form-control" type="text" placeholder="ادخل مجال الشركة" />
+      <div class="d-flex align-items-baseline">
+      <input class="form-control" type="text" placeholder="ادخل مجال الشركة" /> <ButtonSlider class="btn" text=".hrline.com" />
+      </div>
       <p>
         <i class="fa-solid fa-triangle-exclamation ms-1"></i>سننشئ رابط فريد للشركة
         لتتمكن من تسجيل الدخول إلى هيومانلاين
@@ -78,8 +80,13 @@
 </template>
 
 <script>
+import ButtonSlider from '../ButtonSlider.vue';
 export default {
   name: "StepsCard",
+  components:{
+  ButtonSlider
+  }
+
 };
 </script>
 
@@ -88,6 +95,7 @@ export default {
     background-color: #fff;
     border-radius: 10px;
     padding: 1rem;
+    height: 100vh;
 
 }
 .rounded{
@@ -133,6 +141,12 @@ input[type="radio"]:checked {
     background-color: #27a376;
     border-color: #27a376;
 }
-
+.btn{
+  width: 20%;
+  background-color: #CBD5E0;
+  color:#687588;
+  padding: 0.9rem ;
+  margin-right: 1rem;
+}
 
 </style>
