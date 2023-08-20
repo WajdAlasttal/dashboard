@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ header }}</h2>
+  <h2 class="mb-4">{{ header }}</h2>
   <p>{{ body }}</p>
 </template>
 
@@ -12,5 +12,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h2{
+  font-size: 48px;
+}
+p{
+  color: #A0AEC0;
+}
 </style>

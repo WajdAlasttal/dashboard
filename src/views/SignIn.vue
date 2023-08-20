@@ -54,13 +54,10 @@ export default {
 </script>
   
 <style  scoped>
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
-* {
-  font-family: "Tajawal", sans-serif;
-}
 html,
 body {
-  height: 100%
+  max-height: 100%;
+  height:100%;
 }
 .login {
   direction: rtl;
@@ -75,7 +72,7 @@ body {
   border-bottom: 5px solid #27a376;
 }
 .side-bar .content {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 .content .logo i {
   font-size: 20px;
@@ -91,7 +88,7 @@ body {
 .content p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .login-form {
   margin-top: 3rem;
@@ -133,7 +130,7 @@ body {
 }
 .footer {
   position: absolute;
-  bottom: -3%;
+  bottom: 0%;
   left: 12%;
   display: flex;
   justify-content: center;

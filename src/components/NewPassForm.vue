@@ -8,7 +8,7 @@
         <span>*</span>
         <input
           type="password"
-          class="form-control"
+          class="form-controll"
           v-model.trim="state.password.password"
           :class="{ 'invalid-input': v$.password.$error }"
           id="exampleInputPassword1"
@@ -25,7 +25,7 @@
         <span>*</span>
         <input
           type="password"
-          class="form-control"
+          class="form-controll"
           v-model.trim="state.password.confirm_passowrd"
           :class="{ 'invalid-input': v$.password.confirm_passowrd.$error }"
           id="exampleInputPassword1"
@@ -115,13 +115,13 @@ span {
   color: red;
   font-size: 13px;
 }
-.form-control {
+.form-controll {
   width: 100%;
   border: 1px solid #e9eaec;
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
 }
-.form-control:focus {
+.form-controll:focus {
   outline: none !important;
   border: 2px solid #27a376 !important;
 }

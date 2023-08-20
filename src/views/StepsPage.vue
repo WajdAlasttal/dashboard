@@ -21,7 +21,7 @@
                       <li class="owl-dot ms-1"><img src="../assets/images/Step.png" alt=""></li>
                       <li class="owl-dot ms-1"><img src="../assets/images/Step.png" alt=""></li>
                     </ul>
-                    <p>الخطوة 1 من 4</p>
+                    <p class="step">الخطوة 1 من 4</p>
                   </div>
                   <StepHeader
                     header="نحتاج إلى بعض معلومات شركتك"
@@ -29,7 +29,7 @@
                   />
                   <div class="d-flex w-75 flex-row-reverse">
                     <ButtonSlider class="next me-2" text="التالي" />
-                    <button type="submit" class="btn btn2">
+                    <button class="btn2">
                       <router-link to="/">الغاء</router-link>
                     </button>
                   </div>
@@ -42,7 +42,7 @@
                       <li class="owl-dot ms-1"><img src="../assets/images/Step.png" alt=""></li>
                       <li class="owl-dot ms-1"><img src="../assets/images/Step.png" alt=""></li>
                     </ul>
-                    <p>الخطوة 2 من 4</p>
+                    <p class="step">الخطوة 2 من 4</p>
                   </div>
                   <StepHeader
                     header="يمكننا الآن إنشاء مساحة عمل لفريقك."
@@ -61,7 +61,7 @@
                       <li class="owl-dot ms-1"><img src="../assets/images/Steps.png" alt=""></li>
                       <li class="owl-dot ms-1"><img src="../assets/images/Step.png" alt=""></li>
                     </ul>
-                    <p>الخطوة 3 من 4</p>
+                    <p class="step">الخطوة 3 من 4</p>
                   </div>
                   <StepHeader
                     header="ما هو دورك في شركتك؟"
@@ -80,7 +80,7 @@
                       <li class="owl-dot ms-1"><img src="../assets/images/Steps.png" alt=""></li>
                       <li class="owl-dot ms-1"><img src="../assets/images/Steps.png" alt=""></li>
                     </ul>
-                    <p>الخطوة 4 من 4</p>
+                    <p class="step">الخطوة 4 من 4</p>
                   </div>
                   <StepHeader
                     header="ما الذي ستستخدمه بشكل أساسي في Grove HR؟"
@@ -136,7 +136,7 @@ export default {
     $(".owl-carousel").owlCarousel({
       items: 1,
       rtl: true,
-      touchDrag: false,
+      touchDrag: true,
       mouseDrag: false,
       pullDrag: false,
       dotsContainer: "#carousel-custom-dots",
@@ -164,26 +164,21 @@ export default {
   color: #27a376;
 }
 .step-card {
-  margin: 2rem 0;
+  margin: 3rem 0;
   padding: 1rem;
   background-color: #f1f2f4;
   border-radius: 10px;
+  max-height: 100%;
+  height: 100%;
 }
-.btn {
+.btn2 {
   margin-top: 1rem;
   padding: 18px 21px 18px 21px;
   width: 100%;
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
   cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.7;
-}
-.btn2 {
   background-color: #fff;
   border: 1px solid #111827;
   color: #111827;
@@ -191,5 +186,9 @@ export default {
 .btn2 a {
   color: #111827;
   text-decoration: none;
+}
+.step{
+  color: #A0AEC0;
+  margin-bottom: 3rem;
 }
 </style>

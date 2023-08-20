@@ -12,12 +12,14 @@ export default {
 
 <style>
 /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
 *{
   margin: 0;
   padding: 0;
 }
 body{
   height: 100%;
+  font-family: 'Tajawal', sans-serif;
 }
 
 </style>
