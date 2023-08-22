@@ -4,11 +4,11 @@
     <form action="">
       <label class="form-label" for="companyName">اسم الشركة</label
       ><span>*</span>
-      <input class="form-controll" type="text" placeholder="ادخل اسم الشركة"  v-model.trim="state.name" />
+      <input class="form-control" type="text" placeholder="ادخل اسم الشركة"  v-model.trim="state.name" />
       <label class="form-label" for="domainName">دومين الشركة</label>
       <div class="d-flex align-items-baseline flex-row-reverse">
         <input
-          class="form-controll"
+          class="form-control"
           type="text"
           placeholder="ادخل دومين الشركة"
         />
@@ -102,21 +102,22 @@ span {
   color: red;
   font-size: 13px;
 }
-.form-controll {
+.form-control {
   width: 100%;
   border: 1px solid #e9eaec;
   padding: 18px 20px 18px 20px;
   border-radius: 10px;
   margin-bottom: 1rem;
+  box-shadow: none;
 }
-.form-controll::placeholder {
+.form-control::placeholder {
   font-size: 14px;
 }
 .form-label {
   font-size: 14px;
   margin-bottom: 0.3rem;
 }
-.form-controll:focus {
+.form-control:focus {
   outline: none !important;
   border: 2px solid #27a376 !important;
 }
@@ -190,5 +191,20 @@ span {
 	visibility: visible;
 	transform: scale(1);
 }
-
+@media (max-width: 768px) {
+  .steps-input {
+  background-color: transparent;
+}
+.radio-content {
+  margin-bottom: 0;
+}
+.btn {
+  width: 30%;
+}
+}
+@media (min-width:800px) and (max-width: 1280px){
+  .radio-content {
+  margin-bottom: 11.5rem;
+}
+}
 </style>

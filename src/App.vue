@@ -20,6 +20,8 @@ export default {
 body{
   height: 100%;
   font-family: 'Tajawal', sans-serif;
+  position: relative;
 }
+
 
 </style>

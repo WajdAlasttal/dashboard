@@ -11,7 +11,6 @@
   
   <style scoped>
 .btn {
-  margin-top: 1rem;
   padding: 18px 21px 18px 21px;
   width: 100%;
   font-size: 1rem;
@@ -20,6 +19,7 @@
   color: #fff;
   background: #111827;
   cursor: pointer;
+  box-shadow: none;
 }
 .btn:hover {
   opacity: 0.7;

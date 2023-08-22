@@ -88,7 +88,7 @@ body {
 .content p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.3rem;
 }
 .login-form {
   margin-top: 3rem;
@@ -159,8 +159,9 @@ body {
   margin-top: 4rem;
 }
 .footer p {
+  text-align: center;
   margin-left: 0.1rem;
-  font-size: 12px;
+  font-size: 10.5px;
 }
 }
 @media(min-width: 768px)and (max-width: 1024px) { 

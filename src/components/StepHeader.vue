@@ -19,4 +19,12 @@ h2{
 p{
   color: #A0AEC0;
 }
+@media (max-width:769px){
+  h2{
+    display: none;
+  }
+  p{
+    display: none;
+}
+}
 </style>

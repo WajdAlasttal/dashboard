@@ -3,14 +3,14 @@
     <nav class="navbar border-bottom pb-3">
       <div class="container">
         <h1 class="navbar-brand d-flex align-items-center">
-          <i class="fa-solid fa-asterisk mt-2 ms-1"></i>هيومانلاين
+          <i class="fa-solid fa-asterisk mt-1 ms-1"></i>هيومانلاين
         </h1>
       </div>
     </nav>
     <div class="steps-content">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6">
+        <div class="row align-items-center ">
+          <div class="col-lg-6 col-md-12">
             <div class="content">
               <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -27,9 +27,9 @@
                     header="نحتاج إلى بعض معلومات شركتك"
                     body="هذه البيانات مطلوبة حتى نتمكن من توفير الحلول بسهولة وفقًا لقدرة شركتك"
                   />
-                  <div class="d-flex w-75 flex-row-reverse">
+                  <div class="buttons">
                     <ButtonSlider class="next me-2" text="التالي" />
-                    <button class="btn2">
+                    <button type="submit" class="btn2">
                       <router-link to="/">الغاء</router-link>
                     </button>
                   </div>
@@ -48,7 +48,7 @@
                     header="يمكننا الآن إنشاء مساحة عمل لفريقك."
                     body="هذه البيانات مطلوبة حتى نتمكن من توفير الحلول بسهولة وفقًا لقدرة شركتك"
                   />
-                  <div class="d-flex w-75 flex-row-reverse">
+                  <div class="buttons">
                     <ButtonSlider class="next me-2" text="التالي" />
                     <ButtonSlider class="prev btn2 me-1" text="عود الى الخلف" />
                   </div>
@@ -67,7 +67,7 @@
                     header="ما هو دورك في شركتك؟"
                     body="هذه البيانات مطلوبة حتى نتمكن من توفير الحلول بسهولة وفقًا لقدرة شركتك"
                   />
-                  <div class="d-flex w-75 flex-row-reverse">
+                  <div class="buttons">
                     <ButtonSlider class="next me-2" text="التالي" />
                     <ButtonSlider class="prev btn2 me-1" text="عود الى الخلف" />
                   </div>
@@ -86,7 +86,7 @@
                     header="ما الذي ستستخدمه بشكل أساسي في Grove HR؟"
                     body="هذه البيانات مطلوبة حتى نتمكن من توفير الحلول بسهولة وفقًا لقدرة شركتك"
                   />
-                  <div class="d-flex w-75 flex-row-reverse">
+                  <div class="buttons">
                     <ButtonSlider class="next me-2" text="التالي" />
                     <ButtonSlider class="prev btn2 me-1" text="عود الى الخلف" />
                   </div>
@@ -94,7 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="step-card col-6">
+          <div class="step-card col-lg-6 col-md-12">
             <div class="owl-carousel owl-theme">
               <div class="item">
                 <Step1Card />
@@ -172,7 +172,6 @@ export default {
   height: 100%;
 }
 .btn2 {
-  margin-top: 1rem;
   padding: 18px 21px 18px 21px;
   width: 100%;
   font-size: 1rem;
@@ -191,4 +190,29 @@ export default {
   color: #A0AEC0;
   margin-bottom: 3rem;
 }
+.buttons{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 75%;
+}
+@media (max-width: 768px) { 
+  .body{
+    position: relative;
+  }
+.step-card {
+  margin: 0 0;
+  padding: 0;
+  background-color: transparent;
+}
+.steps{
+  margin-top: 2rem;
+}
+.step{
+  margin-bottom: 0rem;
+}
+.btn2 {
+  padding: 15px 10px 15px 10px;
+}
+}
+
 </style>

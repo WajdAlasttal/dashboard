@@ -149,4 +149,9 @@ span {
   visibility: visible;
   transform: scale(1);
 }
+@media (min-width:800px) and (max-width: 1280px){
+  .radio-content {
+  margin-bottom: 11.5rem;
+}
+}
 </style>

@@ -4,7 +4,7 @@
       <div class="domain-input pb-3 border-bottom mt-1 mb-5">
         <label class="form-label mb-2" for="companyName">اسم دومين الشركة</label
         ><span>*</span>
-        <input class="form-controll" type="text" placeholder="ادخل دومين الشركة" />
+        <input class="form-control" type="text" placeholder="ادخل دومين الشركة" />
       </div>
 
       <div class="radio-content">
@@ -60,22 +60,23 @@ span {
   color: red;
   font-size: 13px;
 }
-.form-controll {
+.form-control {
   width: 100%;
   border: 1px solid #e9eaec;
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
   margin-bottom: 1.5rem;
   background-color: #E9EAEC;
+  box-shadow: none;
 }
-.form-controll::placeholder {
+.form-control::placeholder {
   font-size: 14px;
 }
 .form-label {
   font-size: 14px;
   margin-bottom: 0.3rem;
 }
-.form-controll:focus {
+.form-control:focus {
   outline: none !important;
   border: 2px solid #27a376 !important;
 }
@@ -141,5 +142,10 @@ span {
 	opacity: 1;
 	visibility: visible;
 	transform: scale(1);
+}
+@media (min-width:800px) and (max-width: 1280px){
+  .radio-content {
+  margin-bottom: 6rem;
+}
 }
 </style>
