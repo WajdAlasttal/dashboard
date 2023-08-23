@@ -22,6 +22,22 @@ body{
   font-family: 'Tajawal', sans-serif;
   position: relative;
 }
+:root {
+  --background-color-primary: #fff;
+  --background-color-secondary: #111827;
+  --accent-color: #cacaca;
+  --text-primary-color: #111827;
+  --text-secondary-color: #fff;
+  --button-color-secondary: #111827;
+  --element-size: 3.8rem;
+}
 
+:root.dark-theme {
+  --background-color-primary: #111827;
+  --background-color-secondary: #323B49;
+  --accent-color: #323B49;
+  --button-color-secondary: #fff;
+  --text-primary-color: #fff;
+}
 
 </style>

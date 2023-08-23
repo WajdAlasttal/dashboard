@@ -8,7 +8,7 @@
         <span>*</span>
         <input
           type="email"
-          class="form-controll"
+          class="form-control"
           v-model.trim="state.email"
           :class="{ 'invalid-input': v$.email.$error }"
           id="exampleInputEmail1"
@@ -24,7 +24,7 @@
         <span>*</span>
         <input
           type="password"
-          class="form-controll"
+          class="form-control"
           v-model.trim="state.password"
           :class="{ 'invalid-input': v$.password.$error }"
           id="exampleInputPassword1"
@@ -107,13 +107,15 @@ span {
   color: red;
   font-size: 13px;
 }
-.form-controll {
+.form-control {
   width: 100%;
   border: 1px solid #e9eaec;
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
+  box-shadow: none;
+  background-color: var(--background-color-primary);
 }
-.form-controll:focus {
+.form-control:focus {
   outline: none !important;
   border: 2px solid #27a376 !important;
 }
@@ -148,8 +150,8 @@ input[type="checkbox"] {
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
+  color: var(--background-color-primary);
+  background: var(--button-color-secondary);
   cursor: pointer;
 }
 .btn:hover {

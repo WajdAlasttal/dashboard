@@ -31,7 +31,8 @@
     font-size: 16px;
     padding: 1rem 4rem;
     width: 100%;
-    background-color: #fff;
+    color: var(--text-primary-color);
+    background-color: var(--background-color-primary);
     border: 1px solid #E9EAEC;
     border-radius: 12px;
     cursor: pointer;

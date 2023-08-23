@@ -18,6 +18,9 @@
     </div>
     </div>
     <div class="col-md-12 col-lg-6 ">
+      <div class="theme">
+        <ThemeButton/>
+      </div>
       <div class="login-form">
         <h1 class="login-header text-center mt-sm-0">
         تسجيل الدخول أولا إلى حسابك
@@ -45,10 +48,12 @@
   <script>
 import SignInForm from "../components/SignInForm.vue";
 import ButtonVue from "../components/ButtonVue.vue";
+import ThemeButton from '../components/ThemeButton.vue';
 export default {
   components: {
     SignInForm,
     ButtonVue,
+    ThemeButton
   },
 };
 </script>
@@ -59,12 +64,14 @@ body {
   max-height: 100%;
   height:100%;
 }
+
 .login {
   direction: rtl;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 .side-bar {
-  background-color: #111827;
-  color: #fff;
+  background-color: var(--background-color-secondary) ;
 }
 .side-image img {
   width: 100%;
@@ -80,15 +87,26 @@ body {
   margin-left: 0.3rem;
   margin-top: 0.3rem;
 }
+h4{
+  color: var(--text-secondary-color);
+}
 .content h5 {
   font-size: 38px;
   font-weight: 700;
   margin: 1rem 0;
+  color: var(--text-secondary-color);
+
 }
 .content p {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 3.3rem;
+  color: var(--text-secondary-color);
+}
+.theme{
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 .login-form {
   margin-top: 3rem;
@@ -112,7 +130,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background-color: var(--background-color-primary);
   color: #687588;
   padding: 0 10px;
 }
@@ -146,7 +164,7 @@ body {
   .login-form {
   justify-content: center;
   margin-right:0;
-  margin: 4rem;
+  margin: 4rem 4rem 5rem 4rem;
 }
 .line {
   margin-top: 2rem;
