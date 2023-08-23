@@ -149,6 +149,23 @@ span {
   visibility: visible;
   transform: scale(1);
 }
+@media (max-width: 768px) {
+  .steps-input {
+  background-color: transparent;
+}
+.radio-content {
+  margin-bottom: 0;
+}
+.radio-item {
+  width: 100%;
+}
+.radio-item label {
+  padding: 6px 20px 6px 40px;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+}
 @media (min-width:800px) and (max-width: 1280px){
   .radio-content {
   margin-bottom: 11.5rem;

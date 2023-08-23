@@ -198,6 +198,13 @@ span {
 .radio-content {
   margin-bottom: 0;
 }
+.radio-list {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.radio-item {
+  width: 100%;
+}
 .btn {
   width: 30%;
 }

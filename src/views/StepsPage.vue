@@ -213,6 +213,9 @@ export default {
 .btn2 {
   padding: 15px 10px 15px 10px;
 }
+.buttons{
+  margin: 1.5rem 0;
+}
 }
 
 </style>

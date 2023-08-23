@@ -156,15 +156,23 @@ body {
   margin: 0;
 }
 .footer {
-  margin-top: 4rem;
+  left:0%;
+  right: 3%;
 }
 .footer p {
-  text-align: center;
-  margin-left: 0.1rem;
   font-size: 10.5px;
 }
 }
-@media(min-width: 768px)and (max-width: 1024px) { 
+@media (max-width: 376px) {
+  .footer {
+  left:0%;
+  right: 7%;
+}
+.footer p {
+  font-size: 8px;
+}
+}
+@media(min-width: 766px)and (max-width: 1025px) { 
 .login{
   flex-direction: column-reverse;
 }
@@ -180,7 +188,10 @@ body {
   margin: 0;
 }
 .footer {
-  margin-top: 3rem;
+  left: 25%;
+}
+.footer p {
+  color: #27a376;
 }
 }
 @media (min-width:1024px) and (max-width: 1115px){
@@ -202,14 +213,12 @@ body {
 .word {
   font-size: 14px;
 }
-.footer {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-}
 .footer p {
   margin-left: 1rem;
   font-size: 14px;
+}
+.footer {
+  left: 25%;
 }
 }
 </style>
