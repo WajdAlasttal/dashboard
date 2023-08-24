@@ -16,8 +16,8 @@
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
+  color: var(--background-color-primary);
+  background: var(--button-color-secondary);
   cursor: pointer;
   box-shadow: none;
 }

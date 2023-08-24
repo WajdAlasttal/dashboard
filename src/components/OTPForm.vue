@@ -96,6 +96,8 @@ export default {
 .inputs input {
   width: 70px;
   height: 40px;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -114,13 +116,12 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
+  background: var(--button-color-secondary);
   cursor: pointer;
 }
 .btn a {
   text-decoration: none;
-  color: #fff;
+  color: var(--background-color-primary);
 }
 .btn:hover {
   opacity: 0.7;

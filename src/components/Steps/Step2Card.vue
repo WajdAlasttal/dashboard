@@ -50,8 +50,8 @@ export default {
   
   <style scoped>
 .steps-input {
+  background-color: var(--background-color-primary);
   padding: 1rem 1rem 16rem 1rem;
-  background-color: #fff;
   border-radius: 10px;
   max-height: 100%;
   height: 100%;
@@ -62,11 +62,12 @@ span {
 }
 .form-control {
   width: 100%;
-  border: 1px solid #e9eaec;
+  border: none;
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  background-color: #E9EAEC;
+  background: var(--accent-color);
+  color: var(--background-color-primary);
   box-shadow: none;
 }
 .form-control::placeholder {

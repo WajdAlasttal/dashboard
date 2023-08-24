@@ -92,11 +92,11 @@ export default {
 
 <style scoped>
 .steps-input {
-  background-color: #fff;
   border-radius: 10px;
   padding: 1rem 1rem 6.6rem 1rem;
   max-height: 100%;
   height: 100%;
+  background-color: var(--background-color-primary);
 }
 span {
   color: red;
@@ -109,6 +109,8 @@ span {
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: none;
+  color: var(--text-primary-color);
+  background-color: var(--background-color-primary);
 }
 .form-control::placeholder {
   font-size: 14px;

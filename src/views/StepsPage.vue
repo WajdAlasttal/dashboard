@@ -159,6 +159,8 @@ export default {
 <style scoped>
 .steps-page {
   direction: rtl;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 .navbar .navbar-brand i {
   color: #27a376;
@@ -166,7 +168,7 @@ export default {
 .step-card {
   margin: 3rem 0;
   padding: 1rem;
-  background-color: #f1f2f4;
+  background: var(--accent-color);
   border-radius: 10px;
   max-height: 100%;
   height: 100%;
@@ -175,15 +177,14 @@ export default {
   padding: 18px 21px 18px 21px;
   width: 100%;
   font-size: 1rem;
-  border: none;
+  border: 1px solid var(--text-primary-color);
   border-radius: 10px;
   cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #111827;
-  color: #111827;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 .btn2 a {
-  color: #111827;
+  color: var(--text-primary-color);
   text-decoration: none;
 }
 .step{

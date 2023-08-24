@@ -22,10 +22,10 @@ body{
   font-family: 'Tajawal', sans-serif;
   position: relative;
 }
-:root {
+:root{
   --background-color-primary: #fff;
   --background-color-secondary: #111827;
-  --accent-color: #cacaca;
+  --accent-color: #F1F2F4;
   --text-primary-color: #111827;
   --text-secondary-color: #fff;
   --button-color-secondary: #111827;

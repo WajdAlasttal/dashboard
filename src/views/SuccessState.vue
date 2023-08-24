@@ -17,9 +17,12 @@
   <style scoped>
   .wrapper {
     background-image: url("../assets/images/Background.png");
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     position: relative;
+    background-color: var(--background-color-primary);
+    color: var(--text-primary-color);
   }
   .success-state {
     position: absolute;
@@ -45,13 +48,12 @@
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
+  background: var(--button-color-secondary);
   cursor: pointer;
 }
 .btn a {
   text-decoration: none;
-  color: #fff;
+  color: var(--background-color-primary);
 }
 .btn:hover {
   opacity: 0.7;

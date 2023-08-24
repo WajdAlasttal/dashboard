@@ -120,6 +120,8 @@ span {
   border: 1px solid #e9eaec;
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
+  background-color: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 .form-controll:focus {
   outline: none !important;
@@ -132,13 +134,12 @@ span {
   font-size: 1rem;
   border: none;
   border-radius: 10px;
-  color: #fff;
-  background: #111827;
+  background: var(--button-color-secondary);
   cursor: pointer;
 }
 .btn a {
   text-decoration: none;
-  color: #fff;
+  color: var(--background-color-primary);
 }
 
 .btn:hover {

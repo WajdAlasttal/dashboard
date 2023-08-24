@@ -63,12 +63,12 @@ export default {};
 <style scoped>
 .domain-input .domain-name{
     font-size: 20px;
-    color: #000;
+    color: var(--text-primary-color);
     font-weight: 500;
 }
 .steps-input {
   padding: 1rem 1rem 3.5rem 1rem;
-  background-color: #fff;
+  background-color: var(--background-color-primary);
   border-radius: 10px;
   max-height: 100%;
   height: 100%;
@@ -84,6 +84,8 @@ span {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   box-shadow: none;
+  color: var(--text-primary-color);
+  background-color: var(--background-color-primary);
 }
 .form-control::placeholder {
   font-size: 14px;

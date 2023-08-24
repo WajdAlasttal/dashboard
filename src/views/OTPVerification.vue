@@ -33,9 +33,12 @@
   <style scoped>
   .wrapper {
     background-image: url("../assets/images/Background.png");
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     position: relative;
+    background-color: var(--background-color-primary);
+    color: var(--text-primary-color);
   }
   .otp-verify {
     position: absolute;

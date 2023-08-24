@@ -113,6 +113,7 @@ span {
   padding: 16px 20px 16px 20px;
   border-radius: 10px;
   box-shadow: none;
+  color: var(--text-primary-color);
   background-color: var(--background-color-primary);
 }
 .form-control:focus {

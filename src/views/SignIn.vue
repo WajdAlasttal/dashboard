@@ -34,7 +34,7 @@
           <ButtonVue icon="fa-google" text="جوجل" />
           <ButtonVue icon="fa-apple" text="آبل" />
         </div>
-        <p class="create-acc">هل أنت جديد هنا؟ <span>إنشاء حساب</span></p>
+        <p class="create-acc">هل أنت جديد هنا؟ <span><router-link to="/steps">إنشاء حساب</router-link></span></p>
         <div class="footer">
           <p style="color: #a0aec0">© 2023 هيومانلاين. الحقوق محفوظة.</p>
           <p>الشروط والأحكام</p>
@@ -138,7 +138,7 @@ h4{
   display: flex;
   justify-content: space-evenly;
 }
-.create-acc span {
+.create-acc span a{
   color: #27a376;
 }
 .create-acc {

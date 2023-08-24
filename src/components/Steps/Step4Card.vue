@@ -68,11 +68,11 @@ export default {};
   }
 .domain-input .domain-name {
   font-size: 20px;
-  color: #000;
+  color: var(--text-primary-color);
   font-weight: 500;
 }
 .steps-input {
-  background-color: #fff;
+  background-color: var(--background-color-primary);
   border-radius: 10px;
   padding: 1rem 1rem 1.7rem 1rem;
   max-height: 100%;
