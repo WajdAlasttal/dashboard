@@ -7,8 +7,13 @@
       class="switch-checkbox"
     />
     <label for="checkbox" class="switch-label">
-      <span>🌙</span>
-      <span>☀️</span>
+      <div class="dark"><i class="fa-solid fa-moon"></i>
+      <span class="me-2">ليلي</span>
+    </div>    
+      <div class="light">
+        <i class="fa-solid fa-sun"></i>
+      <span class="me-2">مضيئ</span>
+      </div>
       <div
         class="switch-toggle"
         :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"
@@ -69,37 +74,45 @@ export default {
 .switch-checkbox {
   display: none;
 }
-
+i{
+  color: #27a376;
+}
+span{
+  color: var(--text-primary-color);
+}
 .switch-label {
   align-items: center;
-  background: var(--text-primary-color);
+  background: var(--background-color-primary);
   border: calc(var(--element-size) * 0.025) solid var(--accent-color);
   border-radius: var(--element-size);
   cursor: pointer;
   display: flex;
-  font-size: calc(var(--element-size) * 0.35);
+  font-size: calc(var(--element-size) * 0.25);
   height: calc(var(--element-size) * 0.25);
   position: relative;
-  padding: 1rem 0;
+  padding: 1rem 0.3rem;
   transition: background 0.5s ease;
   justify-content: space-between;
-  width: var(--element-size);
+  width: calc(var(--element-size)*3);
   z-index: 1;
 }
 
 .switch-toggle {
   position: absolute;
-  background-color: var(--background-color-primary);
-  border-radius: 50%;
-  top: calc(var(--element-size) * 0.01);
+  border: 2px solid var(--background-color-primary) ;
+  background-color: var(--button-theme);
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  border-radius: 5rem;
+  top: calc(var(--element-size) * 0);
   left: calc(var(--element-size) * 0.01);
-  height: calc(var(--element-size) * 0.45);
-  width: calc(var(--element-size) * 0.45);
+  height: 2rem;
+  width: 5.5rem;
   transform: translateX(0);
   transition: transform 0.3s ease, background-color 0.5s ease;
 }
 
 .switch-toggle-checked {
-  transform: translateX(calc(var(--element-size) * 0.5)) !important;
+  transform: translateX(calc(var(--element-size) *1.5)) !important;
 }
 </style>

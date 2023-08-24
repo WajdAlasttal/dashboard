@@ -30,6 +30,7 @@ body{
   --text-secondary-color: #fff;
   --button-color-secondary: #111827;
   --element-size: 3.8rem;
+  --button-theme:#fff;
 }
 
 :root.dark-theme {
@@ -38,6 +39,7 @@ body{
   --accent-color: #323B49;
   --button-color-secondary: #fff;
   --text-primary-color: #fff;
+  --button-theme:#323B49;
 }
 
 </style>

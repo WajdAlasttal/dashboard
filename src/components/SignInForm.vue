@@ -51,7 +51,7 @@
         @click="submitForm"
         :disabled="v$.$error"
       >
-        تسجيل دخول
+        <router-link to="/home">تسجيل دخول</router-link>
       </button>
     </form>
   </div>
@@ -91,7 +91,7 @@ export default {
     submitForm: function () {
       this.v$.$validate();
       if (!this.v$.$error) {
-        alert("welcome");
+        this.$router.push("/home");
       }
     },
   },
@@ -154,6 +154,10 @@ input[type="checkbox"] {
   color: var(--background-color-primary);
   background: var(--button-color-secondary);
   cursor: pointer;
+}
+.btn a {
+  color: var(--background-color-primary);
+  text-decoration: none;
 }
 .btn:hover {
   opacity: 0.7;
