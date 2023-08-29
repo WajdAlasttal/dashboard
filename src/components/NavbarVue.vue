@@ -86,6 +86,7 @@ nav {
 }
 .dropdown-menu a:hover{
   background-color: #27a376 !important;
+  color: #fff;
 }
 .btn,.dropdown-toggle{
   color: var(--text-primary-color) !important;

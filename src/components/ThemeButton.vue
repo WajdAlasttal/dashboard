@@ -82,7 +82,7 @@ span{
 }
 .switch-label {
   align-items: center;
-  background: var(--background-color-primary);
+  background: var(--accent-color);
   border: calc(var(--element-size) * 0.025) solid var(--accent-color);
   border-radius: var(--element-size);
   cursor: pointer;

@@ -188,7 +188,7 @@
         </div>
         <ul class="collapse nav nav-pills submenu" id="collapseExample5">
           <li><a href="#" class="nav-link ms-5">رواتب الموظفين</a></li>
-          <li><a href="#" class="nav-link">الاعدادات</a></li>
+          <li><a href="#" class="nav-link ms-5">الاعدادات</a></li>
         </ul>
       </li>
       <li>
@@ -318,7 +318,7 @@ export default {
   background-color: var(--background-color-primary);
   border-left: 1px solid var(--accent-color);
   width: 280px;
-  transition: width 0.3s ease;
+  transition: width 0s ease;
 }
 .sidebar-closed {
   width: 3%;
@@ -356,6 +356,7 @@ export default {
 }
 .submenu a:hover{
   background-color: #27a376;
+  color: #fff;
 }
 
 </style>
