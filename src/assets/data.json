@@ -1,0 +1,44 @@
+[
+  {
+    "name": "جون دو",
+    "jobTitle": "مهندس برمجيات",
+    "lineManager": "جين سميث",
+    "department": "الهندسة",
+    "office": "نيويورك"
+  },
+  {
+    "name": "جين سميث",
+    "jobTitle": "مدير هندسة",
+    "lineManager": "ديفيد جونسون",
+    "department": "الهندسة",
+    "office": "نيويورك"
+  },
+  {
+    "name": "ديفيد جونسون",
+    "jobTitle": "المدير التنفيذي",
+    "lineManager": null,
+    "department": "تنفيذي",
+    "office": "سان فرانسيسكو"
+  },
+  {
+    "name": "إميلي براون",
+    "jobTitle": "أخصائي تسويق",
+    "lineManager": "سارة لي",
+    "department": "التسويق",
+    "office": "لوس أنجلوس"
+  },
+  {
+    "name": "سارة لي",
+    "jobTitle": "مدير تسويق",
+    "lineManager": "ديفيد جونسون",
+    "department": "التسويق",
+    "office": "لوس أنجلوس"
+  },
+  {
+    "name": "لينا لي",
+    "jobTitle": "مدير تسويق",
+    "lineManager": "ديفيد جونسون",
+    "department": "التسويق",
+    "office": "لوس أنجلوس"
+  }
+]

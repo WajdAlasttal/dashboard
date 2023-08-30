@@ -1,7 +1,7 @@
 <template>
-  <div class="performance py-3">
+  <div class="performance d-flex justify-content-around py-3">
     <div class="counter me-5">
-        <div class="row text-center w-50">
+        <div class="row text-center w-100">
             <div class="col-6 p-0">
                <div class="employees">
                 <i class="fa-solid fa-user"></i>
@@ -23,7 +23,7 @@
                </div> 
             </div>
         </div>
-        <div class="row text-center w-50">
+        <div class="row text-center w-100">
             <div class="col-6 p-0">
                <div class="newemployees">
                 <i class="fa-solid fa-plus"></i>
@@ -46,13 +46,16 @@
             </div>
         </div>
     </div>
+    <LineChart/>
   </div>
 </template>
 
 <script>
-
+import LineChart from '../Charts/LineChart.vue';
 export default {
-    
+    components:{
+        LineChart
+    },
 }
 </script>
 

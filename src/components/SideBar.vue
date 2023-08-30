@@ -314,7 +314,6 @@ export default {
 
 <style scoped>
 .sidebar {
-  height: 100vh;
   background-color: var(--background-color-primary);
   border-left: 1px solid var(--accent-color);
   width: 280px;
