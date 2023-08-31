@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>مجموع الموظفين</h4>
-    <canvas id="donut" width="300" height="200"></canvas>
+    <canvas class="p-5" id="donut" width="300" height="200"></canvas>
   </div>
 </template>
     

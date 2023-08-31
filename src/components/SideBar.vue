@@ -19,8 +19,8 @@
     </div>
     <ul v-if="sidebarOpen" class="nav nav-pills flex-column mb-auto mt-3">
       <li class="nav-item">
-        <a
-          href="#"
+        <router-link
+          to="/home"
           class="nav-link d-flex align-items-center justify-content-between"
           :class="{ active: activeLink === 0 }"
           @click="activeLink = 0"
@@ -28,7 +28,7 @@
         >
           لوحة القيادة
           <i class="fa-solid fa-table-cells-large text-white"></i>
-        </a>
+        </router-link>
       </li>
       <li class="mt-4">
         <div
@@ -57,7 +57,7 @@
           ></i>
         </div>
         <ul class="collapse nav nav-pills submenu" id="collapseExample">
-          <li><a href="#" class="nav-link ms-5">إدارة الموظفين</a></li>
+          <li><router-link to="/employees" @click="handleLinkClick" class="nav-link ms-5">إدارة الموظفين</router-link></li>
           <li><a href="#" class="nav-link ms-3">دلبل الموظفين</a></li>
           <li><a href="#" class="nav-link">المخطط الهيكلي</a></li>
         </ul>
@@ -308,6 +308,9 @@ export default {
     console.log(this.sidebarOpen);
     this.sidebarOpen = !this.sidebarOpen;
   },
+  handleLinkClick() {
+      this.$emit("linkClicked");
+    },
   },
 };
 </script>

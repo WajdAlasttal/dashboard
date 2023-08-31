@@ -59,8 +59,9 @@
   
 <script>
 import useValidate from "@vuelidate/core";
-import { required, email, minLength,helpers } from "@vuelidate/validators";
+import { required, email, minLength, helpers } from "@vuelidate/validators";
 import { reactive, computed } from "vue";
+import Swal from 'sweetalert2'
 export default {
   name: "SignInForm",
   setup() {
@@ -72,11 +73,17 @@ export default {
       return {
         email: {
           required: helpers.withMessage("يجب ادخال قيمة", required),
-          email: helpers.withMessage("القيمة ليست عنوان بريد إلكتروني صالحًا",email),
+          email: helpers.withMessage(
+            "القيمة ليست عنوان بريد إلكتروني صالحًا",
+            email
+          ),
         },
         password: {
           required: helpers.withMessage("يجب ادخال قيمة", required),
-          minLength: helpers.withMessage("يجب أن تكون طولها 8 أحرف على الأقل",minLength(8)),
+          minLength: helpers.withMessage(
+            "يجب أن تكون طولها 8 أحرف على الأقل",
+            minLength(8)
+          ),
         },
       };
     });
@@ -91,6 +98,13 @@ export default {
     submitForm: function () {
       this.v$.$validate();
       if (!this.v$.$error) {
+        Swal.fire({
+          title: "اهلا بك في هيومانلاين",
+          text: "استمتع براحة إدارة موظفي شركتك!",
+          imageUrl: "https://res.cloudinary.com/dgcz5jz53/image/upload/v1693468764/humanline/Illustration_ob0sfk.png",
+          imageAlt: "اهلا وسهلا",
+          confirmButtonText: 'انطلق',
+        });
         this.$router.push("/home");
       }
     },
@@ -168,4 +182,5 @@ input[type="checkbox"] {
 .invalid-input {
   border-color: red;
 }
+
 </style>

@@ -4,41 +4,54 @@
     "jobTitle": "مهندس برمجيات",
     "lineManager": "جين سميث",
     "department": "الهندسة",
-    "office": "نيويورك"
+    "office": "نيويورك",
+    "status": "نشط",
+    "account": "مفعل"
   },
   {
     "name": "جين سميث",
     "jobTitle": "مدير هندسة",
     "lineManager": "ديفيد جونسون",
     "department": "الهندسة",
-    "office": "نيويورك"
+    "office": "نيويورك",
+    "status": "نشط",
+    "account": "مفعل"
   },
   {
     "name": "ديفيد جونسون",
     "jobTitle": "المدير التنفيذي",
     "lineManager": null,
     "department": "تنفيذي",
-    "office": "سان فرانسيسكو"
+    "office": "سان فرانسيسكو",
+    "status": "نشط",
+    "account": "غير مفعل"
   },
   {
     "name": "إميلي براون",
     "jobTitle": "أخصائي تسويق",
     "lineManager": "سارة لي",
     "department": "التسويق",
-    "office": "لوس أنجلوس"
+    "office": "لوس أنجلوس",
+    "status": "غير نشط",
+    "account": "غير مفعل"
   },
   {
     "name": "سارة لي",
     "jobTitle": "مدير تسويق",
     "lineManager": "ديفيد جونسون",
     "department": "التسويق",
-    "office": "لوس أنجلوس"
+    "office": "لوس أنجلوس",
+    "status": "نشط",
+    "account": "غير مفعل"
   },
   {
     "name": "لينا لي",
     "jobTitle": "مدير تسويق",
     "lineManager": "ديفيد جونسون",
     "department": "التسويق",
-    "office": "لوس أنجلوس"
+    "office": "لوس أنجلوس",
+    "status": "غير نشط",
+    "account": "مفعل"
   }
 ]
+

@@ -1,8 +1,5 @@
 <template>
-  <div class="home d-flex">
-    <SideBar />
     <div class="home-content w-100">
-      <Navbar />
       <div class="welcome">
         <h4>مرحبًا بريشيا</h4>
         <p>هذا هو تقرير الموارد البشرية الخاص بك حتى الآن</p>
@@ -12,7 +9,7 @@
       </div>
       <div class="bottom-content d-flex ">
         <div class="home-conte w-100">
-          <HomeContent2 />
+          <EmployeeContent />
         </div>
         <div class="donut">
           <div class="home-conte p-3">
@@ -21,31 +18,22 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
-
 <script>
-import SideBar from "../components/SideBar.vue";
-import Navbar from "../components/NavbarVue.vue";
 import HomeContent1 from "../components/Home/HomeContent1.vue";
-import HomeContent2 from "../components/Home/HomeContent2.vue";
+import EmployeeContent from "../components/Home/EmployeeContent.vue";
 import DonutChart from '../components/Charts/DonutChart.vue';
 export default {
   components: {
-    SideBar,
-    Navbar,
     HomeContent1,
-    HomeContent2,
+    EmployeeContent,
     DonutChart
   },
 };
 </script>
 
 <style scoped>
-.home {
-  direction: rtl;
-  background: var(--accent-color);
-}
+
 .welcome {
   padding: 1.5rem 1rem;
   color: var(--text-primary-color);
