@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import EmployeesData from '../components/EmployeesData.vue';
+import EmployeesData from '../components/Home/EmployeesData.vue';
 export default {
   components:{
     EmployeesData

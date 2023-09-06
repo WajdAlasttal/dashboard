@@ -97,16 +97,8 @@
         "office": "لندن",
         "status": "نشط",
         "account": "غير مفعل"
-      },
-      {
-        "name": "مريم خالد",
-        "jobTitle": "مدير موارد بشرية",
-        "lineManager": "سارة عبدالله",
-        "department": "الموارد البشرية",
-        "office": "دبي",
-        "status": "نشط",
-        "account": "مفعل"
       }
+
   ]
   
   

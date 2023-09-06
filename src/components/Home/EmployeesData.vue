@@ -11,7 +11,7 @@
         <button class="btn1 d-flex align-items-center ms-2">
           <i class="fa-solid fa-download ms-1"></i> تنزيل
         </button>
-        <button class="btn1 btn2">
+        <button class="btn1 btn2" @click="toggleSidebar">
           <i class="fa-solid fa-plus ms-1"></i>اضف
         </button>
       </div>
@@ -109,7 +109,7 @@
         <tbody>
           <tr scope="row" v-for="(employee, index) in employees" :key="index">
             <td scope="col"><input type="checkbox" /></td>
-            <td >{{ employee.name }}</td>
+            <td>{{ employee.name }}</td>
             <td>{{ employee.jobTitle }}</td>
             <td>{{ employee.lineManager }}</td>
             <td>{{ employee.department }}</td>
@@ -137,12 +137,17 @@
         </li>
       </ul>
     </nav>
+    <AddEmployee v-if="isSidebarOpen" :isOpen="isSidebarOpen" @close-sidebar="closeSidebar" />
   </div>
 </template>
   
   <script>
-import employeeData from "../assets/employees.json";
+import employeeData from "../../assets/employees.json";
+import AddEmployee from "./AddEmployee.vue";
 export default {
+  components: {
+    AddEmployee,
+  },
   data() {
     return {
       employees: employeeData,
@@ -157,7 +162,6 @@ export default {
         "المدير التنفيذي",
         "محاسبة",
         "مدير مالية",
-        "مدير موارد بشرية",
       ],
       offices: [
         "نيويورك",
@@ -166,9 +170,17 @@ export default {
         "القاهرة",
         "الرياض",
         "لندن",
-        "دبي",
       ],
+      isSidebarOpen: false,
     };
+  },
+  methods: {
+    toggleSidebar() {
+      this.isSidebarOpen = !this.isSidebarOpen;
+    },
+    closeSidebar() {
+      this.isSidebarOpen = false;
+    },
   },
 };
 </script>
