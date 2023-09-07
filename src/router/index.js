@@ -6,8 +6,8 @@ import OTPVerification from "../views/OTPVerification.vue";
 import SuccessState from '../views/SuccessState.vue'
 import StepsPage from '../views/StepsPage.vue';
 import HomePage from '../views/HomePage.vue';
-// import HomeContents from '../views/HomeContents.vue'
 import EmployeesPage from '../views/EmployeesPage.vue';
+import EmployeesDetails from '../views/EmployeesDetails.vue';
 const routes = [
   {
     path: "/",
@@ -51,17 +51,19 @@ const routes = [
     component:HomePage,
     meta: { showSidebar: true, showNavbar: true } 
   },
-  // {
-  //   path:'/dashboard',
-  //   name:HomeContents,
-  //   component:HomeContents,
-  // },
   {
     path:'/employees',
     name:EmployeesPage,
     component:EmployeesPage,
     meta: { showSidebar: true, showNavbar: true } 
   },
+  {
+    path:'/employeesdetails/:id',
+    name:EmployeesDetails,
+    component:EmployeesDetails,
+    meta: { showSidebar: true, showNavbar: true } 
+  },
+
 ];
 const router = createRouter({
   routes,

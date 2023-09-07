@@ -109,7 +109,7 @@
         <tbody>
           <tr scope="row" v-for="(employee, index) in employees" :key="index">
             <td scope="col"><input type="checkbox" /></td>
-            <td>{{ employee.name }}</td>
+            <td><router-link :to="'/employeesdetails/'+ employee.id">{{ employee.name }}</router-link></td>
             <td>{{ employee.jobTitle }}</td>
             <td>{{ employee.lineManager }}</td>
             <td>{{ employee.department }}</td>
@@ -195,8 +195,11 @@ export default {
 th,
 tr,
 h4,
-p {
+p , a{
   color: var(--text-primary-color);
+}
+a{
+  text-decoration: none;
 }
 .form-control {
   color: var(--background-color-primary);
