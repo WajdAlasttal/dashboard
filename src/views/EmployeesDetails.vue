@@ -183,8 +183,54 @@
                   </div>
                 </div>
               </SingleTab>
-              <SingleTab title="الراتب"> </SingleTab>
-              <SingleTab title="مستندات">docs</SingleTab>
+              <SingleTab title="الراتب">
+                <div class="personal-info">
+                  <h4 class="m-3">معلومات شخصية</h4>
+                  <hr />
+                  <div class="info d-flex justify-content-between mx-3">
+                    <div class="first-part">
+                      <p>
+                        <span>حالة الموظف : </span>{{ employeeDetails.status }}
+                      </p>
+                      <p>
+                        <span>نوع التوظيف : </span>تعاقد
+                      </p>
+                      <p>
+                        <span>تحديد الموقع الجغرافي : </span
+                        >-
+                      </p>
+                    </div>
+                    <div class="second-part">
+                      <p><span>مسمى وظيفي : </span>{{ employeeDetails.jobTitle }}</p>
+                      <p><span>تاريخ الوظيفة : </span>16 فبراير 2020</p>
+                      <p><span>تاريخ العمل الأخير : </span>-</p>
+                    </div>
+                    </div>
+                    <div class="salary">
+                     <div class="salary-card d-flex align-items-center justify-content-between mx-2">
+                      <h6>إجمالي التعويضات</h6>
+                      <h6>$ 3,729,00</h6>
+                     </div> 
+                     <div class="salary-card bg-white d-flex align-items-center justify-content-between mx-2">
+                      <h6>الراتب</h6>
+                     </div> 
+                     <div class="salary-card  bg-white d-flex align-items-center justify-content-between mx-2">
+                      <h6>التكرار</h6>
+                      <h6>$0</h6>
+                     </div> <div class="salary-card  bg-white d-flex align-items-center justify-content-between mx-2">
+                      <h6>لمرة واحدة</h6>
+                      <h6>$0</h6>
+                     </div> <div class="salary-card  bg-white d-flex align-items-center justify-content-between mx-2">
+                      <h6>عوض</h6>
+                     </div> 
+                    </div>
+                    </div> 
+              </SingleTab>
+              <SingleTab title="مستندات">
+                <FileUpload/>
+
+
+              </SingleTab>
               <SingleTab title="الاعدادات">
                 <div class="personal-info mt-4">
                   <h4 class="m-3">إعدادت الحساب</h4>
@@ -239,11 +285,13 @@ import employeeData from "../assets/employees.json";
 import ButtonSlider from "../components/ButtonSlider.vue";
 import TabsWrapper from "../components/TabsWrapper.vue";
 import SingleTab from "../components/SingleTab.vue";
+import FileUpload from '../components/FileUpload.vue';
 export default {
   components: {
     ButtonSlider,
     TabsWrapper,
     SingleTab,
+    FileUpload
   },
   data() {
     return {
@@ -275,7 +323,7 @@ export default {
 
 <style scoped>
 h4,
-p {
+p ,th,td {
   color: var(--text-primary-color);
 }
 .profile {
@@ -319,5 +367,12 @@ hr {
 }
 .dropdown-menu{
   text-align: right;
+}
+.salary-card{
+  background: #f1f2f4;
+  padding: 1.5rem 1rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 2rem 1rem 1rem 1rem;
 }
 </style>

@@ -32,6 +32,7 @@ export default {
 }
 .tabs-header li{
     padding: 1rem 0;
+    color: var(--text-primary-color);
 }
 .tabs-header li.selected{
     color: #27A376;
